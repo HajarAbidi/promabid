@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 110" width="300" height="110">
+  <circle cx="52" cy="50" r="40" fill="none" stroke="#F5A623" stroke-width="4"/>
+  <rect x="34" y="28" width="10" height="36" rx="1" fill="#B8D4E8"/>
+  <rect x="47" y="18" width="12" height="46" rx="1" fill="#D0E8F5"/>
+  <rect x="62" y="24" width="10" height="40" rx="1" fill="#B8D4E8"/>
+  <rect x="36" y="32" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="36" y="39" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="36" y="46" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="49" y="22" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="49" y="29" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="49" y="36" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="49" y="43" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="64" y="28" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="64" y="35" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <rect x="64" y="42" width="3" height="3" fill="#F5A623" opacity="0.9"/>
+  <text x="104" y="42" font-family="Arial Black,sans-serif" font-weight="900" font-size="28" fill="white" letter-spacing="1">PROMABID</text>
+  <text x="105" y="60" font-family="Arial,sans-serif" font-size="10" fill="#F5A623" letter-spacing="3">TRAVAUX DE CONSTRUCTION</text>
+  <line x1="105" y1="67" x2="290" y2="67" stroke="#F5A623" stroke-width="0.8" opacity="0.4"/>
+  <text x="105" y="80" font-family="Arial,sans-serif" font-size="9" fill="#666" letter-spacing="1">Société de Construction &amp; Négoce — Fès, Maroc</text>
+</svg>

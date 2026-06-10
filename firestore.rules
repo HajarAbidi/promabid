@@ -1,0 +1,58 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * Helper Functions
+     */
+     
+    // Fetches the tenant_id assigned to the authenticated user's profile
+    function getAuthenticatedUserTenantId() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.tenant_id;
+    }
+
+    // Checks if the user is authenticated and belongs to the specified tenant
+    function isTenantAdmin(tenantId) {
+      return request.auth != null && getAuthenticatedUserTenantId() == tenantId;
+    }
+
+    /**
+     * Multi-Tenant Rules Architecture
+     */
+
+    // 1. Tenant Metadata
+    match /tenants/{tenantId} {
+      // Admins can read their own company metadata
+      allow read: if isTenantAdmin(tenantId);
+      // Metadata updates usually handled via high-privilege backend or manual intervention
+      allow write: if false; 
+
+      // 2. Quotes Sub-collection (Leads)
+      match /quotes/{quoteId} {
+        // Allow public lead capture (anyone can submit a quote)
+        allow create: if true;
+        
+        // Only assigned tenant admins can view or manage these quotes
+        allow read, update, delete: if isTenantAdmin(tenantId);
+      }
+
+      // 3. Chat Sessions Sub-collection
+      match /chat_sessions/{sessionId} {
+        // AI Assistant can initiate sessions publicly
+        allow create: if true;
+        
+        // Access restricted to authorized tenant admins
+        allow read, update, delete: if isTenantAdmin(tenantId);
+      }
+    }
+
+    // 4. User Profiles (Admins)
+    match /users/{uid} {
+      // Users can only read their own profile to verify their tenant_id
+      allow read: if request.auth != null && request.auth.uid == uid;
+      
+      // Profile creation and tenant assignment must be handled by a secure Admin SDK
+      allow write: if false;
+    }
+  }
+}

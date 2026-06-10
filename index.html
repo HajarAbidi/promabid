@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>STE PROMABID SARL — Travaux de Construction, Fès</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- EmailJS pour envoyer les devis par email -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  // Remplacez ces clés après inscription sur emailjs.com
+  emailjs.init("VOTRE_PUBLIC_KEY");
+</script>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <img src="images/logo.svg" alt="PROMABID" class="nav-logo"/>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#equipe">Équipe</a></li>
+    <li><a href="#gallery">Réalisations</a></li>
+    <li><a href="#devis">Devis</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:+212631321083" class="nav-cta">📞 +212 631 32 10 83</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1541913080221-47b233967323?w=1600&q=85')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-geo"></div>
+  <div class="hero-content">
+    <p class="hero-tag">STE PROMABID SARL — Fès, Maroc</p>
+    <h1>Bâtir<br><span>l'avenir</span><br>avec vous</h1>
+    <p class="hero-sub">Société de Construction, Travaux Divers &amp; Négoce. Nous œuvrons dans tous les domaines de la construction immobilière — du gros œuvre aux opérations tous corps d'état.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollTo('devis')">Demander un devis gratuit</button>
+      <button class="btn-outline" onclick="scrollTo('about')">En savoir plus</button>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Ans d'expérience</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Chefs chantiers</div></div>
+    <div class="stat"><div class="stat-num">65+</div><div class="stat-label">Ouvriers qualifiés</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Satisfaction client</div></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-img-col">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?w=700&q=80" alt="Chantier PROMABID" class="about-img"/>
+        <div class="about-badge">
+          <div class="badge-num">10+</div>
+          <div class="badge-txt">ans d'expérience</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-tag">Qui sommes-nous</div>
+      <h2>STE <span class="gold">PROMABID</span> SARL</h2>
+      <p class="about-desc"><strong>STE PROMABID</strong> (Société de Construction, Travaux Divers &amp; Négoce) est une entreprise marocaine de construction basée à Fès. Elle œuvre dans <strong>tous les domaines de la construction immobilière</strong> et soumissionne tant aux marchés de <strong>gros œuvre</strong> qu'à des opérations <strong>tous corps d'état</strong>.</p>
+      <p class="about-desc">Dirigée par <strong>Hamza Abidi</strong> et <strong>Ibrahim Abidi</strong>, notre équipe ayant une longue expérience de terrain à l'échelon national est à l'écoute des attentes de nos clients.</p>
+
+      <div class="valeurs-grid">
+        <div class="valeur-item"><span class="valeur-icon">👂</span><span>L'Écoute</span></div>
+        <div class="valeur-item"><span class="valeur-icon">🤝</span><span>L'Engagement</span></div>
+        <div class="valeur-item"><span class="valeur-icon">🔒</span><span>La Confidentialité</span></div>
+        <div class="valeur-item"><span class="valeur-icon">🏆</span><span>Le Professionnalisme</span></div>
+        <div class="valeur-item"><span class="valeur-icon">⭐</span><span>L'Excellence</span></div>
+      </div>
+
+      <div class="about-contacts">
+        <div class="ac-row"><span class="ac-icon">📞</span><span>+212 631 32 10 83 &nbsp;·&nbsp; +212 669 12 25 37</span></div>
+        <div class="ac-row"><span class="ac-icon">📠</span><span>+212 535 69 36 33</span></div>
+        <div class="ac-row"><span class="ac-icon">✉️</span><span>ste.promabid@gmail.com</span></div>
+        <div class="ac-row"><span class="ac-icon">📍</span><span>85 Rue Riad Hay Hassani 3, Route Ain Chkef, FES 30000</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="section-tag">Ce que nous faisons</div>
+  <h2>Nos <span class="gold">Services</span></h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Gros Œuvre"/>
+      </div>
+      <div class="service-body">
+        <div class="snum">01</div>
+        <h3>Gros Œuvre & Construction</h3>
+        <p>Construction de tous types d'ouvrages résidentiels et commerciaux. Étude de béton armé, estimation d'affaires GC, métrés et avant-métrés.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Travaux"/>
+      </div>
+      <div class="service-body">
+        <div class="snum">02</div>
+        <h3>Travaux Tous Corps d'État</h3>
+        <p>Plomberie, électricité, carrelage, peinture, menuiserie — tous les corps de métier réunis. Suivi des travaux rigoureux à chaque étape.</p>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img src="images/materiaux_chantier.jpg" alt="Matériaux"/>
+      </div>
+      <div class="service-body">
+        <div class="snum">03</div>
+        <h3>Négoce & Vente Matériaux</h3>
+        <p>Vente de matériaux de construction de qualité. Béton, fer, brique, ciment et matériaux de finition. Approvisionnement rapide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJETS ===== -->
+<section class="projets" id="projets">
+  <div class="section-tag">Références</div>
+  <h2>Nos <span class="gold">Projets</span></h2>
+  <div class="projets-grid">
+   
+    <div class="projet-card">
+      <div class="projet-num"></div>
+      <div class="projet-img">
+        <img src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a?w=600&q=80" alt="R+2 Riad El Yasmine"/>
+      </div>
+      <div class="projet-body">
+        <h3>R+2 — Lotissement Riad El Yasmine</h3>
+        <p>Construction complète d'un immeuble R+2 au Lotissement Riad El Yasmine, Fès.</p>
+        <span class="projet-tag">Construction</span>
+      </div>
+    </div>
+    <div class="projet-card">
+      <div class="projet-num"></div>
+      <div class="projet-img">
+        <img src="https://images.unsplash.com/photo-1590579491624-f98f36d4c763?w=600&q=80" alt="Centres préscolaires"/>
+      </div>
+      <div class="projet-body">
+        <h3>Centres Préscolaires — Ain Baida</h3>
+        <p>Construction de centres préscolaires à la Commune de Ain Baida — marché public.</p>
+        <span class="projet-tag">Marché public</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OBJECTIFS ===== -->
+<section class="objectifs">
+  <div class="obj-inner">
+    <div class="obj-text">
+      <div class="section-tag">Notre engagement</div>
+      <h2>Nos <span class="gold">Objectifs</span></h2>
+      <ul class="obj-list">
+        <li><span class="obj-icon">✓</span> Leur satisfaction</li>
+        <li><span class="obj-icon">✓</span> L'anticipation de leurs attentes</li>
+        <li><span class="obj-icon">✓</span> Un partenariat durable</li>
+        <li><span class="obj-icon">✓</span> L'amélioration continue</li>
+      </ul>
+    </div>
+    <div class="obj-img">
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80" alt="Équipe PROMABID"/>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EQUIPE ===== -->
+<section class="equipe" id="equipe">
+  <div class="section-tag">Ressources humaines</div>
+  <h2>Notre <span class="gold">Équipe</span></h2>
+  <div class="equipe-grid">
+    <div class="eq-card highlight">
+      <div class="eq-icon">👔</div>
+      <div class="eq-num">1</div>
+      <div class="eq-role">Directeur Général</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🦺</div>
+      <div class="eq-num">3</div>
+      <div class="eq-role">Chefs Chantiers</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🧱</div>
+      <div class="eq-num">10</div>
+      <div class="eq-role">Maçons Qualifiés</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🔩</div>
+      <div class="eq-num">4</div>
+      <div class="eq-role">Coffreurs Qualifiés</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">⚡</div>
+      <div class="eq-num">6</div>
+      <div class="eq-role">Électriciens</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🔧</div>
+      <div class="eq-num">5</div>
+      <div class="eq-role">Plombiers</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🎨</div>
+      <div class="eq-num">20</div>
+      <div class="eq-role">Peintres</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">💻</div>
+      <div class="eq-num">3</div>
+      <div class="eq-role">Techniciens Informatique</div>
+    </div>
+    <div class="eq-card">
+      <div class="eq-icon">🏗️</div>
+      <div class="eq-num">1</div>
+      <div class="eq-role">Tech. Spécialisé Gros Œuvres</div>
+    </div>
+  </div>
+
+  <!-- Matériaux -->
+  <div class="materiaux">
+    <div class="section-tag" style="margin-top:60px">Nos ressources matérielles</div>
+    <h2>Nos <span class="gold">Équipements</span></h2>
+    <div class="mat-grid">
+      <div class="mat-item">🏗️ 3 Bétonnières</div>
+      <div class="mat-item">🔝 6 Monte-charge</div>
+      <div class="mat-item">🚗 4 Voitures de service</div>
+      <div class="mat-item">🛻 1 Voiture pick-up</div>
+      <div class="mat-item">🚜 1 Trax JCB</div>
+      <div class="mat-item">🚛 1 Camion</div>
+      <div class="mat-item">🔵 20 Bouettes</div>
+      <div class="mat-item">🔨 3 Compacteurs vibrants</div>
+      <div class="mat-item">🪵 Bois de coffrage 4m³</div>
+      <div class="mat-item">🔩 1500 Étais métalliques</div>
+      <div class="mat-item">🪜 20 Escaliers coulis</div>
+      <div class="mat-item">🪜 30 Escaliers doublés</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="section-tag">Portfolio</div>
+  <h2>Nos <span class="gold">Réalisations</span></h2>
+  <div class="gallery-grid">
+    <div class="gallery-item large">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80" alt="Construction"/>
+      <div class="gallery-overlay"><span>Chantier Gros Œuvre</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1591955506264-3f5a6834570a?w=500&q=80" alt="Bâtiment"/>
+      <div class="gallery-overlay"><span>Construction R+2</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=500&q=80" alt="Travaux"/>
+      <div class="gallery-overlay"><span>Travaux Divers</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&q=80" alt="Électricité"/>
+      <div class="gallery-overlay"><span>Électricité</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="Ferraillage"/>
+      <div class="gallery-overlay"><span>Béton Armé</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/materiaux_chantier.jpg" alt="Matériaux"/>
+      <div class="gallery-overlay"><span>Négoce Matériaux</span></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== DEVIS ===== -->
+<section class="devis" id="devis">
+  <div class="devis-inner">
+    <div class="devis-info">
+      <div class="section-tag">Gratuit & Sans engagement</div>
+      <h2>Demandez votre <span class="gold">Devis</span></h2>
+      <p>Remplissez le formulaire et nous vous contactons dans les 24h. Un email de confirmation sera envoyé automatiquement.</p>
+      <div class="devis-feature"><div class="df-icon">✓</div><p>Devis gratuit et sans engagement</p></div>
+      <div class="devis-feature"><div class="df-icon">⚡</div><p>Réponse sous 24h garantie</p></div>
+      <div class="devis-feature"><div class="df-icon">🤝</div><p>Conseil personnalisé par Hamza ou Ibrahim Abidi</p></div>
+      <div class="devis-feature"><div class="df-icon">📍</div><p>Intervention à Fès et toute la région</p></div>
+      <div class="devis-logo">
+        <img src="images/logo.svg" alt="PROMABID"/>
+      </div>
+    </div>
+    <div class="form-wrap">
+      <div id="devis-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom & Nom *</label>
+            <input type="text" id="f-name" placeholder="Mohammed Alaoui"/>
+          </div>
+          <div class="form-group">
+            <label>Téléphone *</label>
+            <input type="tel" id="f-phone" placeholder="+212 6XX XX XX XX"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="f-email" placeholder="votre@email.com"/>
+        </div>
+        <div class="form-group">
+          <label>Type de travaux *</label>
+          <select id="f-type">
+            <option value="">Sélectionner...</option>
+            <option>Gros œuvre / Construction neuve</option>
+            <option>Rénovation tous corps d'état</option>
+            <option>Étude de béton armé</option>
+            <option>Estimation d'affaire GC</option>
+            <option>Métrés et avant-métrés</option>
+            <option>Achat / Négoce matériaux</option>
+            <option>Suivi de travaux</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Budget estimé</label>
+          <select id="f-budget">
+            <option value="">Sélectionner...</option>
+            <option>Moins de 50,000 MAD</option>
+            <option>50,000 – 150,000 MAD</option>
+            <option>150,000 – 500,000 MAD</option>
+            <option>500,000 – 2,000,000 MAD</option>
+            <option>Plus de 2,000,000 MAD</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Description du projet</label>
+          <textarea id="f-desc" placeholder="Décrivez votre projet : type d'ouvrage, surface, localisation, délais souhaités..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitForm()">
+          <span id="btn-text">Envoyer ma demande de devis →</span>
+        </button>
+        <p class="form-note">* Champs obligatoires. Vos données sont confidentielles.</p>
+      </div>
+      <div id="form-success" style="display:none">
+        <div class="success-box">
+          <div class="success-check">✓</div>
+          <h3>Demande envoyée avec succès !</h3>
+          <p>Un email de confirmation a été envoyé.</p>
+          <p>Hamza ou Ibrahim vous contactera dans les <strong>24h</strong>.</p>
+          <div class="success-contacts">
+            <p>📞 +212 631 32 10 83</p>
+            <p>📞 +212 669 12 25 37</p>
+            <p>✉️ ste.promabid@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact-section" id="contact">
+  <div class="section-tag">Nous trouver</div>
+  <h2>Contactez <span class="gold">PROMABID</span></h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="cc-icon">📞</div>
+      <div class="cc-label">Hamza Abidi</div>
+      <div class="cc-val">+212 631 32 10 83</div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">📱</div>
+      <div class="cc-label">Ibrahim Abidi</div>
+      <div class="cc-val">+212 669 12 25 37</div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">📠</div>
+      <div class="cc-label">FAX</div>
+      <div class="cc-val">+212 535 69 36 33</div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">✉️</div>
+      <div class="cc-label">Email</div>
+      <div class="cc-val">ste.promabid@gmail.com</div>
+    </div>
+    <div class="contact-card wide">
+      <div class="cc-icon">📍</div>
+      <div class="cc-label">Adresse</div>
+      <div class="cc-val">85 Rue Riad Hay Hassani 3, Route Ain Chkef, FES 30000</div>
+    </div>
+  </div>
+  <div class="map-wrap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2452445101655!2d-5.016335!3d34.011899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCMDAnNDIuOCJOIDXCsDAwJzU4LjgiVw!5e0!3m2!1sfr!2sma!4v1700000000000!5m2!1sfr!2sma" width="100%" height="340" style="border:0;filter:grayscale(0.6)" allowfullscreen loading="lazy"></iframe>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-brand">
+    <img src="images/logo.svg" alt="PROMABID" class="footer-logo"/>
+    <p>Société de Construction, Travaux Divers &amp; Négoce</p>
+    <p>85 Rue Riad Hay Hassani 3, Route Ain Chkef, FES 30000</p>
+  </div>
+  <div class="footer-nav">
+    <h4>Navigation</h4>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#projets">Projets</a>
+    <a href="#gallery">Réalisations</a>
+    <a href="#devis">Devis gratuit</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-contact">
+    <h4>Contact</h4>
+    <p>📞 +212 631 32 10 83</p>
+    <p>📞 +212 669 12 25 37</p>
+    <p>📠 +212 535 69 36 33</p>
+    <p>✉️ ste.promabid@gmail.com</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 STE PROMABID SARL — Tous droits réservés — Fès, Maroc</p>
+  </div>
+</footer>
+
+<!-- ===== CHATBOT ===== -->
+<button id="chatbot-btn" onclick="toggleChat()">💬</button>
+<div id="chatbot-box">
+  <div class="chat-header">
+    <div>
+      <h4>Assistant PROMABID</h4>
+      <p>🟢 En ligne — Réponse immédiate</p>
+    </div>
+    <button class="chat-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="msg bot">Bonjour 👋 Je suis l'assistant de STE PROMABID. Posez vos questions sur nos services, projets ou demandez un devis.</div>
+  </div>
+  <div class="chat-suggestions">
+    <div class="sug" onclick="quickMsg('Demander un devis')">💰 Devis</div>
+    <div class="sug" onclick="quickMsg('Vos services ?')">🏗️ Services</div>
+    <div class="sug" onclick="quickMsg('Vos projets ?')">📋 Projets</div>
+    <div class="sug" onclick="quickMsg('Contact')">📞 Contact</div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chat-input" placeholder="Votre question..." onkeydown="if(event.key==='Enter')sendMsg()"/>
+    <button onclick="sendMsg()">➤</button>
+  </div>
+</div>
+
+<script src="js/firebase-integration.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
