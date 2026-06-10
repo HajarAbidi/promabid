@@ -227,7 +227,7 @@ footer>div:not(.footer-bottom){display:grid;grid-template-columns:2fr 1fr 1fr;ga
   footer>div:not(.footer-bottom){grid-template-columns:1fr}
 }
 @media(max-width:900px){
-  .services-grid,.projets-grid{grid-template-columns:1fr}
+  .services-grid,.projets-grid{grid-template-columns:1fr;gap:30px}
   .devis-inner{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:repeat(2,1fr)}
   .contact-card.wide{grid-column:span 2}
