@@ -71,30 +71,30 @@ h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,5vw,62px);letter-spa
 
 /* ---- SERVICES ---- */
 .services{background:var(--dark3)}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;max-width:900px;margin:0 auto}
 .service-card{background:var(--dark2);overflow:hidden;border-top:3px solid transparent;transition:all .3s;cursor:default}
 .service-card:hover{border-top-color:var(--gold)}
-.service-img-wrap{overflow:hidden;height:200px}
+.service-img-wrap{overflow:hidden;height:220px}
 .service-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .service-card:hover .service-img-wrap img{transform:scale(1.06)}
-.service-body{padding:28px}
+.service-body{padding:32px}
 .snum{font-family:'Bebas Neue',sans-serif;font-size:42px;color:rgba(245,166,35,.2);line-height:1;margin-bottom:8px}
-.service-card h3{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:1px;margin-bottom:10px;color:var(--white)}
-.service-card p{font-size:13px;color:var(--gray);line-height:1.7;font-weight:300}
+.service-card h3{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1px;margin-bottom:12px;color:var(--white)}
+.service-card p{font-size:14px;color:var(--gray);line-height:1.7;font-weight:300}
 
 /* ---- PROJETS ---- */
 .projets{background:var(--dark2)}
 .projets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.projet-card{background:var(--dark3);overflow:hidden;position:relative;transition:all .3s}
+.projet-card{background:var(--dark3);overflow:hidden;position:relative;transition:all .3s;height:100%}
 .projet-card:hover{transform:translateY(-4px)}
 .projet-num{position:absolute;top:16px;left:16px;font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gold);opacity:.3;line-height:1;z-index:1}
-.projet-img{height:200px;overflow:hidden}
+.projet-img{height:220px;overflow:hidden}
 .projet-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .projet-card:hover .projet-img img{transform:scale(1.08)}
-.projet-body{padding:24px}
-.projet-card h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;margin-bottom:10px;color:var(--white)}
-.projet-card p{font-size:13px;color:var(--gray);line-height:1.6;margin-bottom:14px}
-.projet-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(245,166,35,.1);border:1px solid rgba(245,166,35,.25);padding:4px 10px}
+.projet-body{padding:28px}
+.projet-card h3{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;margin-bottom:12px;color:var(--white);line-height:1.3}
+.projet-card p{font-size:13px;color:var(--gray);line-height:1.6;margin-bottom:16px}
+.projet-tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.25);padding:6px 12px}
 
 /* ---- OBJECTIFS ---- */
 .objectifs{background:var(--dark3)}
